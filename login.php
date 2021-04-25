@@ -12,6 +12,9 @@ if(isset($data['do_login'])){
 			//$rootlaw=R::exec('SELECT id FROM `lk` WHERE login= 'makar'');
 			if($user['id']==1){
 			header('Location: /clientroot.php');}
+			if($user['id']==3){
+			header('Location: /clientrab.php');    
+			}
 			else {
 			header('Location: /client.php');}	
 			
@@ -46,7 +49,7 @@ if(isset($data['do_login'])){
 
 
 <p>
-	<button type="submit" name="do_login">Войти</button>
+	<button class="button" type="submit" name="do_login">Войти</button>
 </p>
 </div>
     <style>
@@ -90,12 +93,10 @@ top: initial;
 	background-color:#96B4E1;
 
 	border:2px solid #A8C2E1;
-	width:200px;
+
 	margin-left:40px;
 	font-size:35px;
-		margin-left:630px;
 
-	margin-right:20px;
         
     }
     input.problem {
@@ -114,6 +115,33 @@ top: initial;
   width: 200px;
   border: none;
   border-bottom: 1px solid #ccc;
+}
+.button{
+    
+    display: inline-block;
+  width: 5em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  color: rgb(0,0,0);
+  outline: none;
+  border: 1px solid rgba(0,0,0,.4);
+  border-top-color: rgba(0,0,0,.3);
+  border-radius: 2px;
+  background: linear-gradient(rgb(255,255,255), rgb(240,240,240));
+  box-shadow:
+   0 0 3px rgba(0,0,0,0) inset,
+   0 1px 1px 1px rgba(255,255,255,.2),
+   0 -1px 1px 1px rgba(0,0,0,0);
+  transition: .2s ease-in-out;
+  background: linear-gradient(rgb(250,250,250), rgb(100,100,235));
+  box-shadow:
+   0 0 3px rgba(0,0,0,.5) inset,
+   0 1px 1px 1px rgba(255,255,255,.4),
+   0 -1px 1px 1px rgba(0,0,0,.1);
 }
 }
 </style>
