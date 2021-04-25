@@ -1,0 +1,1216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+-<manifest platformBuildVersionName="11" platformBuildVersionCode="30" package="host.exp.exponent" android:versionName="2.19.3" android:versionCode="149" android:compileSdkVersionCodename="11" android:compileSdkVersion="30" xmlns:android="http://schemas.android.com/apk/res/android">
+
+<uses-sdk android:targetSdkVersion="30" android:minSdkVersion="21"/>
+
+<permission android:protectionLevel="signature" android:name="host.exp.exponent.permission.C2D_MESSAGE"/>
+
+<uses-permission android:name="host.exp.exponent.permission.C2D_MESSAGE"/>
+
+<uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+<uses-permission android:name="android.permission.INTERNET"/>
+
+<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+
+<uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+<uses-permission android:name="android.permission.MANAGE_DOCUMENTS"/>
+
+<uses-permission android:name="android.permission.READ_INTERNAL_STORAGE"/>
+
+<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+<uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+
+<uses-permission android:name="android.permission.VIBRATE"/>
+
+<uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+
+<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+<uses-permission android:name="android.permission.CAMERA"/>
+
+<uses-permission android:name="android.permission.READ_CONTACTS"/>
+
+<uses-permission android:name="android.permission.READ_CALENDAR"/>
+
+<uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+<uses-permission android:name="android.permission.RECORD_AUDIO"/>
+
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+<uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+
+<uses-feature android:required="true" android:glEsVersion="0x20000"/>
+
+<uses-feature android:name="android.software.leanback" android:required="false"/>
+
+<uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+<uses-feature android:name="android.hardware.camera" android:required="false"/>
+
+<uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+
+<uses-feature android:name="android.hardware.location" android:required="false"/>
+
+<uses-feature android:name="android.hardware.location.gps" android:required="false"/>
+
+<uses-feature android:name="android.hardware.location.network" android:required="false"/>
+
+<uses-feature android:name="android.hardware.wifi" android:required="false"/>
+
+<uses-feature android:name="android.hardware.microphone" android:required="false"/>
+
+<uses-feature android:name="android.hardware.telephony" android:required="false"/>
+
+<uses-feature android:name="android.hardware.bluetooth" android:required="false"/>
+
+<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+
+-<queries>
+
+
+-<intent>
+
+<action android:name="android.intent.action.VIEW"/>
+
+<data android:scheme="content"/>
+
+</intent>
+
+
+-<intent>
+
+<action android:name="android.intent.action.SENDTO"/>
+
+<data android:scheme="mailto"/>
+
+</intent>
+
+
+-<intent>
+
+<action android:name="android.media.action.IMAGE_CAPTURE"/>
+
+</intent>
+
+
+-<intent>
+
+<action android:name="android.media.action.ACTION_VIDEO_CAPTURE"/>
+
+</intent>
+
+
+-<intent>
+
+<action android:name="android.support.customtabs.action.CustomTabsService"/>
+
+</intent>
+
+
+-<intent>
+
+<action android:name="android.intent.action.SEND"/>
+
+<data android:mimeType="*/*"/>
+
+</intent>
+
+
+-<intent>
+
+<action android:name="android.intent.action.TTS_SERVICE"/>
+
+</intent>
+
+</queries>
+
+
+-<queries>
+
+
+-<intent>
+
+<action android:name="android.media.action.IMAGE_CAPTURE"/>
+
+</intent>
+
+
+-<intent>
+
+<action android:name="android.media.action.ACTION_VIDEO_CAPTURE"/>
+
+</intent>
+
+</queries>
+
+<uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+
+<uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+
+
+-<queries>
+
+
+-<intent>
+
+<action android:name="android.intent.action.SENDTO"/>
+
+<data android:scheme="mailto"/>
+
+</intent>
+
+</queries>
+
+
+-<queries>
+
+
+-<intent>
+
+<action android:name="android.intent.action.SEND"/>
+
+<data android:mimeType="*/*"/>
+
+</intent>
+
+</queries>
+
+
+-<queries>
+
+
+-<intent>
+
+<action android:name="android.intent.action.TTS_SERVICE"/>
+
+</intent>
+
+</queries>
+
+
+-<queries>
+
+
+-<intent>
+
+<action android:name="android.support.customtabs.action.CustomTabsService"/>
+
+</intent>
+
+</queries>
+
+<uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+
+<uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+
+<uses-permission android:name="android.permission.STORAGE"/>
+
+<supports-screens android:xlargeScreens="true" android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" android:anyDensity="true"/>
+
+<uses-permission android:name="com.sec.android.provider.badge.permission.READ"/>
+
+<uses-permission android:name="com.sec.android.provider.badge.permission.WRITE"/>
+
+<uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS"/>
+
+<uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT"/>
+
+<uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE"/>
+
+<uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE"/>
+
+<uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT"/>
+
+<uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE"/>
+
+<uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE"/>
+
+<uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS"/>
+
+<uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS"/>
+
+<uses-permission android:name="android.permission.READ_APP_BADGE"/>
+
+<uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS"/>
+
+<uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS"/>
+
+<uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ"/>
+
+<uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE"/>
+
+<uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+
+<uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION"/>
+
+<uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+
+
+-<application android:name="host.exp.exponent.MainApplication" android:usesCleartextTraffic="true" android:supportsRtl="true" android:requestLegacyExternalStorage="true" android:largeHeap="true" android:label="@string/app_name" android:icon="@mipmap/ic_launcher" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:allowBackup="true">
+
+
+-<activity android:name="host.exp.exponent.LauncherActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:launchMode="singleTask" android:exported="true">
+
+
+-<intent-filter>
+
+<data android:scheme="exp"/>
+
+<data android:scheme="exps"/>
+
+<action android:name="android.intent.action.VIEW"/>
+
+<category android:name="android.intent.category.DEFAULT"/>
+
+<category android:name="android.intent.category.BROWSABLE"/>
+
+</intent-filter>
+
+
+-<intent-filter>
+
+<data android:scheme="http" android:pathPrefix="/@" android:host="exp.host"/>
+
+<data android:scheme="https" android:pathPrefix="/@" android:host="exp.host"/>
+
+<data android:scheme="http" android:host="*.exp.direct" android:pathPattern=".*"/>
+
+<data android:scheme="https" android:host="*.exp.direct" android:pathPattern=".*"/>
+
+<action android:name="android.intent.action.VIEW"/>
+
+<category android:name="android.intent.category.DEFAULT"/>
+
+<category android:name="android.intent.category.BROWSABLE"/>
+
+</intent-filter>
+
+
+-<intent-filter>
+
+<category android:name="android.intent.category.DEFAULT"/>
+
+<category android:name="android.intent.category.BROWSABLE"/>
+
+<action android:name="expo.modules.notifications.OPEN_APP_ACTION"/>
+
+</intent-filter>
+
+</activity>
+
+<activity android:name="host.exp.exponent.experience.ExperienceActivity" android:theme="@style/Theme.Exponent.Light" android:windowSoftInputMode="adjustResize" android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"/>
+
+<activity android:name="host.exp.exponent.MainActivity" android:theme="@style/Theme.Exponent.Splash" android:launchMode="singleTask" android:windowSoftInputMode="adjustResize" android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"/>
+
+
+-<activity android:name="host.exp.exponent.experience.HomeActivity" android:label="@string/app_name" android:theme="@style/Theme.Exponent.HomeActivity" android:launchMode="singleTask" android:screenOrientation="portrait">
+
+
+-<intent-filter>
+
+<action android:name="android.intent.action.MAIN"/>
+
+<category android:name="android.intent.category.DEFAULT"/>
+
+<category android:name="android.intent.category.LAUNCHER"/>
+
+</intent-filter>
+
+
+-<intent-filter>
+
+<data android:scheme="expauth"/>
+
+<action android:name="android.intent.action.VIEW"/>
+
+<category android:name="android.intent.category.DEFAULT"/>
+
+<category android:name="android.intent.category.BROWSABLE"/>
+
+</intent-filter>
+
+
+-<intent-filter>
+
+<data android:scheme="expo-home"/>
+
+<action android:name="android.intent.action.VIEW"/>
+
+<category android:name="android.intent.category.DEFAULT"/>
+
+<category android:name="android.intent.category.BROWSABLE"/>
+
+</intent-filter>
+
+</activity>
+
+
+-<activity android:name="host.exp.exponent.experience.TvActivity" android:label="@string/app_name" android:theme="@style/Theme.Exponent.Light" android:screenOrientation="landscape">
+
+
+-<intent-filter>
+
+<action android:name="android.intent.action.MAIN"/>
+
+<category android:name="android.intent.category.LEANBACK_LAUNCHER"/>
+
+</intent-filter>
+
+</activity>
+
+<activity android:name="com.facebook.react.devsupport.DevSettingsActivity"/>
+
+<activity android:name="abi41_0_0.com.facebook.react.devsupport.DevSettingsActivity"/>
+
+<activity android:name="abi40_0_0.com.facebook.react.devsupport.DevSettingsActivity"/>
+
+<activity android:name="abi39_0_0.com.facebook.react.devsupport.DevSettingsActivity"/>
+
+<activity android:name="abi38_0_0.com.facebook.react.devsupport.DevSettingsActivity"/>
+
+
+-<activity android:name="net.openid.appauth.RedirectUriReceiverActivity">
+
+
+-<intent-filter>
+
+<action android:name="android.intent.action.VIEW"/>
+
+<category android:name="android.intent.category.DEFAULT"/>
+
+<category android:name="android.intent.category.BROWSABLE"/>
+
+<data android:scheme="host.exp.exponent" android:path="oauthredirect"/>
+
+</intent-filter>
+
+</activity>
+
+
+-<activity android:name="expo.modules.payments.stripe.RedirectUriReceiver" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" android:launchMode="singleTask" android:exported="true">
+
+
+-<intent-filter>
+
+<action android:name="android.intent.action.VIEW"/>
+
+<category android:name="android.intent.category.DEFAULT"/>
+
+<category android:name="android.intent.category.BROWSABLE"/>
+
+<data android:scheme="expo.modules.payments.stripe"/>
+
+</intent-filter>
+
+</activity>
+
+
+-<activity android:name="abi41_0_0.expo.modules.payments.stripe.RedirectUriReceiver" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" android:launchMode="singleTask" android:exported="true">
+
+
+-<intent-filter>
+
+<action android:name="android.intent.action.VIEW"/>
+
+<category android:name="android.intent.category.DEFAULT"/>
+
+<category android:name="android.intent.category.BROWSABLE"/>
+
+<data android:scheme="abi41_0_0.expo.modules.payments.stripe"/>
+
+</intent-filter>
+
+</activity>
+
+
+-<activity android:name="abi40_0_0.expo.modules.payments.stripe.RedirectUriReceiver" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" android:launchMode="singleTask" android:exported="true">
+
+
+-<intent-filter>
+
+<action android:name="android.intent.action.VIEW"/>
+
+<category android:name="android.intent.category.DEFAULT"/>
+
+<category android:name="android.intent.category.BROWSABLE"/>
+
+<data android:scheme="abi40_0_0.expo.modules.payments.stripe"/>
+
+</intent-filter>
+
+</activity>
+
+
+-<activity android:name="abi39_0_0.expo.modules.payments.stripe.RedirectUriReceiver" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" android:launchMode="singleTask" android:exported="true">
+
+
+-<intent-filter>
+
+<action android:name="android.intent.action.VIEW"/>
+
+<category android:name="android.intent.category.DEFAULT"/>
+
+<category android:name="android.intent.category.BROWSABLE"/>
+
+<data android:scheme="abi39_0_0.expo.modules.payments.stripe"/>
+
+</intent-filter>
+
+</activity>
+
+
+-<activity android:name="abi38_0_0.expo.modules.payments.stripe.RedirectUriReceiver" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" android:launchMode="singleTask" android:exported="true">
+
+
+-<intent-filter>
+
+<action android:name="android.intent.action.VIEW"/>
+
+<category android:name="android.intent.category.DEFAULT"/>
+
+<category android:name="android.intent.category.BROWSABLE"/>
+
+<data android:scheme="abi38_0_0.expo.modules.payments.stripe"/>
+
+</intent-filter>
+
+</activity>
+
+<activity android:name="host.exp.exponent.experience.ErrorActivity" android:theme="@style/Theme.Exponent.Dark" android:screenOrientation="portrait"/>
+
+<activity android:name="com.facebook.FacebookActivity" android:label="@string/app_name" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+
+
+-<activity android:name="com.facebook.CustomTabActivity" android:exported="true">
+
+
+-<intent-filter>
+
+<action android:name="android.intent.action.VIEW"/>
+
+<category android:name="android.intent.category.DEFAULT"/>
+
+<category android:name="android.intent.category.BROWSABLE"/>
+
+</intent-filter>
+
+
+-<intent-filter>
+
+<action android:name="android.intent.action.VIEW"/>
+
+<category android:name="android.intent.category.DEFAULT"/>
+
+<category android:name="android.intent.category.BROWSABLE"/>
+
+<data android:scheme="fbconnect" android:host="cct.host.exp.exponent"/>
+
+</intent-filter>
+
+</activity>
+
+<activity android:name="com.facebook.ads.InterstitialAdActivity" android:label="@string/app_name" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+
+<service android:name="host.exp.exponent.ExponentIntentService" android:exported="false"/>
+
+
+-<receiver android:name="host.exp.exponent.referrer.InstallReferrerReceiver" android:exported="true">
+
+
+-<intent-filter>
+
+<action android:name="com.android.vending.INSTALL_REFERRER"/>
+
+</intent-filter>
+
+</receiver>
+
+
+-<receiver android:name="com.google.android.gms.analytics.AnalyticsReceiver" android:exported="false" android:enabled="true">
+
+
+-<intent-filter>
+
+<action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH"/>
+
+</intent-filter>
+
+</receiver>
+
+<service android:name="com.google.android.gms.analytics.AnalyticsService" android:exported="false" android:enabled="true"/>
+
+
+-<service android:name="host.exp.exponent.fcm.ExpoFcmMessagingService">
+
+
+-<intent-filter>
+
+<action android:name="com.google.firebase.MESSAGING_EVENT"/>
+
+</intent-filter>
+
+</service>
+
+<service android:name="host.exp.exponent.fcm.FcmRegistrationIntentService" android:exported="false"/>
+
+<meta-data android:name="expo.modules.notifications.default_notification_icon" android:resource="@drawable/shell_notification_icon"/>
+
+<meta-data android:name="expo.modules.notifications.default_notification_color" android:resource="@color/notification_icon_color"/>
+
+<meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@drawable/shell_notification_icon"/>
+
+<meta-data android:name="com.google.firebase.messaging.default_notification_color" android:resource="@color/notification_icon_color"/>
+
+<activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity" android:theme="@style/Base.Theme.AppCompat"/>
+
+<meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyBihTqA0p77LDOPzKNcrjIqAPKwV3OeMyE"/>
+
+<meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="ca-app-pub-3940256099942544~3347511713"/>
+
+<meta-data android:name="com.google.android.gms.ads.DELAY_APP_MEASUREMENT_INIT" android:value="true"/>
+
+<meta-data android:name="com.facebook.sdk.AutoLogAppEventsEnabled" android:value="false"/>
+
+<meta-data android:name="com.facebook.sdk.AutoInitEnabled" android:value="false"/>
+
+<meta-data android:name="com.facebook.sdk.AdvertiserIDCollectionEnabled" android:value="false"/>
+
+
+-<provider android:name="androidx.core.content.FileProvider" android:exported="false" android:grantUriPermissions="true" android:authorities="host.exp.exponent.provider">
+
+<meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+
+</provider>
+
+
+-<provider android:name="abi41_0_0.host.exp.exponent.modules.api.components.webview.RNCWebViewFileProvider" android:exported="false" android:grantUriPermissions="true" android:authorities="host.exp.exponent.fileprovider">
+
+<meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+
+</provider>
+
+<meta-data android:name="org.unimodules.core.AppLoader#react-native-headless" android:value="host.exp.exponent.taskManager.ExpoHeadlessAppLoader"/>
+
+
+-<receiver android:name="host.exp.exponent.notifications.ExpoNotificationsService" android:exported="false" android:enabled="true">
+
+
+-<intent-filter>
+
+<action android:name="expo.modules.notifications.NOTIFICATION_EVENT"/>
+
+<action android:name="android.intent.action.BOOT_COMPLETED"/>
+
+<action android:name="android.intent.action.REBOOT"/>
+
+<action android:name="android.intent.action.QUICKBOOT_POWERON"/>
+
+<action android:name="com.htc.intent.action.QUICKBOOT_POWERON"/>
+
+<action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+
+</intent-filter>
+
+</receiver>
+
+<meta-data android:name="abi41_0_0.org.unimodules.core.AppLoader#react-native-headless" android:value="abi41_0_0.org.unimodules.adapters.react.apploader.RNHeadlessAppLoader"/>
+
+<activity android:name="abi41_0_0.expo.modules.appauth.AppAuthBrowserActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:launchMode="singleTask" android:exported="false"/>
+
+<meta-data android:name="com.google.firebase.ml.vision.DEPENDENCIES" android:value="face"/>
+
+
+-<provider android:name="abi41_0_0.expo.modules.filesystem.FileSystemFileProvider" android:exported="false" android:grantUriPermissions="true" android:authorities="host.exp.exponent.FileSystemFileProvider">
+
+<meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_system_provider_paths"/>
+
+</provider>
+
+
+-<provider android:name="abi41_0_0.expo.modules.imagepicker.ImagePickerFileProvider" android:exported="false" android:grantUriPermissions="true" android:authorities="host.exp.exponent.ImagePickerFileProvider">
+
+<meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/image_picker_provider_paths"/>
+
+</provider>
+
+<service android:name="abi41_0_0.expo.modules.location.services.LocationTaskService" android:exported="false"/>
+
+
+-<provider android:name="abi41_0_0.expo.modules.mailcomposer.MailComposerFileProvider" android:exported="false" android:grantUriPermissions="true" android:authorities="host.exp.exponent.MailComposerFileProvider">
+
+<meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/mail_composer_provider_paths"/>
+
+</provider>
+
+
+-<service android:name="abi41_0_0.expo.modules.notifications.service.ExpoFirebaseMessagingService" android:exported="false">
+
+
+-<intent-filter android:priority="-1">
+
+<action android:name="com.google.firebase.MESSAGING_EVENT"/>
+
+</intent-filter>
+
+</service>
+
+
+-<receiver android:name="abi41_0_0.expo.modules.notifications.service.NotificationsService" android:exported="false" android:enabled="true">
+
+
+-<intent-filter android:priority="-1">
+
+<action android:name="abi41_0_0.expo.modules.notifications.NOTIFICATION_EVENT"/>
+
+<action android:name="android.intent.action.BOOT_COMPLETED"/>
+
+<action android:name="android.intent.action.REBOOT"/>
+
+<action android:name="android.intent.action.QUICKBOOT_POWERON"/>
+
+<action android:name="com.htc.intent.action.QUICKBOOT_POWERON"/>
+
+<action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+
+</intent-filter>
+
+</receiver>
+
+<activity android:name="abi41_0_0.expo.modules.payments.stripe.OpenBrowserActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:launchMode="singleTask" android:exported="false"/>
+
+
+-<provider android:name="abi41_0_0.expo.modules.sharing.SharingFileProvider" android:exported="false" android:grantUriPermissions="true" android:authorities="host.exp.exponent.SharingFileProvider">
+
+<meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/sharing_provider_paths"/>
+
+</provider>
+
+
+-<receiver android:name="abi41_0_0.expo.modules.taskManager.TaskBroadcastReceiver" android:exported="false">
+
+
+-<intent-filter>
+
+<action android:name="abi41_0_0.expo.modules.taskManager.TaskBroadcastReceiver.INTENT_ACTION"/>
+
+<action android:name="android.intent.action.BOOT_COMPLETED"/>
+
+<action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+
+</intent-filter>
+
+</receiver>
+
+<service android:name="abi41_0_0.expo.modules.taskManager.TaskJobService" android:exported="false" android:enabled="true" android:permission="android.permission.BIND_JOB_SERVICE"/>
+
+<meta-data android:name="abi41_0_0.expo.modules.taskManager.oneAppId" android:value="true"/>
+
+
+-<provider android:name="abi40_0_0.host.exp.exponent.modules.api.components.webview.RNCWebViewFileProvider" android:exported="false" android:grantUriPermissions="true" android:authorities="host.exp.exponent.fileprovider">
+
+<meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+
+</provider>
+
+<meta-data android:name="abi40_0_0.org.unimodules.core.AppLoader#react-native-headless" android:value="abi40_0_0.org.unimodules.adapters.react.apploader.RNHeadlessAppLoader"/>
+
+<activity android:name="abi40_0_0.expo.modules.appauth.AppAuthBrowserActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:launchMode="singleTask" android:exported="false"/>
+
+
+-<provider android:name="abi40_0_0.expo.modules.filesystem.FileSystemFileProvider" android:exported="false" android:grantUriPermissions="true" android:authorities="host.exp.exponent.FileSystemFileProvider">
+
+<meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_system_provider_paths"/>
+
+</provider>
+
+
+-<provider android:name="abi40_0_0.expo.modules.imagepicker.ImagePickerFileProvider" android:exported="false" android:grantUriPermissions="true" android:authorities="host.exp.exponent.ImagePickerFileProvider">
+
+<meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/image_picker_provider_paths"/>
+
+</provider>
+
+<service android:name="abi40_0_0.expo.modules.location.services.LocationTaskService" android:exported="false"/>
+
+
+-<provider android:name="abi40_0_0.expo.modules.mailcomposer.MailComposerFileProvider" android:exported="false" android:grantUriPermissions="true" android:authorities="host.exp.exponent.MailComposerFileProvider">
+
+<meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/mail_composer_provider_paths"/>
+
+</provider>
+
+
+-<service android:name="abi40_0_0.expo.modules.notifications.service.ExpoFirebaseMessagingService" android:exported="false">
+
+
+-<intent-filter android:priority="-1">
+
+<action android:name="com.google.firebase.MESSAGING_EVENT"/>
+
+</intent-filter>
+
+</service>
+
+
+-<receiver android:name="abi40_0_0.expo.modules.notifications.service.NotificationsService" android:exported="false" android:enabled="true">
+
+
+-<intent-filter android:priority="-1">
+
+<action android:name="abi40_0_0.expo.modules.notifications.NOTIFICATION_EVENT"/>
+
+<action android:name="android.intent.action.BOOT_COMPLETED"/>
+
+<action android:name="android.intent.action.REBOOT"/>
+
+<action android:name="android.intent.action.QUICKBOOT_POWERON"/>
+
+<action android:name="com.htc.intent.action.QUICKBOOT_POWERON"/>
+
+<action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+
+</intent-filter>
+
+</receiver>
+
+<activity android:name="abi40_0_0.expo.modules.payments.stripe.OpenBrowserActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:launchMode="singleTask" android:exported="false"/>
+
+
+-<provider android:name="abi40_0_0.expo.modules.sharing.SharingFileProvider" android:exported="false" android:grantUriPermissions="true" android:authorities="host.exp.exponent.SharingFileProvider">
+
+<meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/sharing_provider_paths"/>
+
+</provider>
+
+
+-<receiver android:name="abi40_0_0.expo.modules.taskManager.TaskBroadcastReceiver" android:exported="false">
+
+
+-<intent-filter>
+
+<action android:name="abi40_0_0.expo.modules.taskManager.TaskBroadcastReceiver.INTENT_ACTION"/>
+
+<action android:name="android.intent.action.BOOT_COMPLETED"/>
+
+<action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+
+</intent-filter>
+
+</receiver>
+
+<service android:name="abi40_0_0.expo.modules.taskManager.TaskJobService" android:exported="false" android:enabled="true" android:permission="android.permission.BIND_JOB_SERVICE"/>
+
+<meta-data android:name="abi40_0_0.expo.modules.taskManager.oneAppId" android:value="true"/>
+
+
+-<provider android:name="abi39_0_0.host.exp.exponent.modules.api.components.webview.RNCWebViewFileProvider" android:exported="false" android:grantUriPermissions="true" android:authorities="host.exp.exponent.fileprovider">
+
+<meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+
+</provider>
+
+<meta-data android:name="abi39_0_0.org.unimodules.core.AppLoader#react-native-headless" android:value="abi39_0_0.org.unimodules.adapters.react.apploader.RNHeadlessAppLoader"/>
+
+<activity android:name="abi39_0_0.expo.modules.appauth.AppAuthBrowserActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:launchMode="singleTask" android:exported="false"/>
+
+
+-<provider android:name="abi39_0_0.expo.modules.filesystem.FileSystemFileProvider" android:exported="false" android:grantUriPermissions="true" android:authorities="host.exp.exponent.FileSystemFileProvider">
+
+<meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_system_provider_paths"/>
+
+</provider>
+
+
+-<provider android:name="abi39_0_0.expo.modules.imagepicker.ImagePickerFileProvider" android:exported="false" android:grantUriPermissions="true" android:authorities="host.exp.exponent.ImagePickerFileProvider">
+
+<meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/image_picker_provider_paths"/>
+
+</provider>
+
+<service android:name="abi39_0_0.expo.modules.location.services.LocationTaskService" android:exported="false"/>
+
+
+-<provider android:name="abi39_0_0.expo.modules.mailcomposer.MailComposerFileProvider" android:exported="false" android:grantUriPermissions="true" android:authorities="host.exp.exponent.MailComposerFileProvider">
+
+<meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/mail_composer_provider_paths"/>
+
+</provider>
+
+<activity android:name="abi39_0_0.expo.modules.payments.stripe.OpenBrowserActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:launchMode="singleTask" android:exported="false"/>
+
+
+-<provider android:name="abi39_0_0.expo.modules.sharing.SharingFileProvider" android:exported="false" android:grantUriPermissions="true" android:authorities="host.exp.exponent.SharingFileProvider">
+
+<meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/sharing_provider_paths"/>
+
+</provider>
+
+
+-<receiver android:name="abi39_0_0.expo.modules.taskManager.TaskBroadcastReceiver" android:exported="false">
+
+
+-<intent-filter>
+
+<action android:name="abi39_0_0.expo.modules.taskManager.TaskBroadcastReceiver.INTENT_ACTION"/>
+
+<action android:name="android.intent.action.BOOT_COMPLETED"/>
+
+<action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+
+</intent-filter>
+
+</receiver>
+
+<service android:name="abi39_0_0.expo.modules.taskManager.TaskJobService" android:exported="false" android:enabled="true" android:permission="android.permission.BIND_JOB_SERVICE"/>
+
+<meta-data android:name="abi39_0_0.expo.modules.taskManager.oneAppId" android:value="true"/>
+
+
+-<provider android:name="abi38_0_0.host.exp.exponent.modules.api.components.webview.RNCWebViewFileProvider" android:exported="false" android:grantUriPermissions="true" android:authorities="host.exp.exponent.fileprovider">
+
+<meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+
+</provider>
+
+<meta-data android:name="abi38_0_0.org.unimodules.core.AppLoader#react-native-headless" android:value="abi38_0_0.org.unimodules.adapters.react.apploader.RNHeadlessAppLoader"/>
+
+<activity android:name="abi38_0_0.expo.modules.appauth.AppAuthBrowserActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:launchMode="singleTask" android:exported="false"/>
+
+
+-<provider android:name="abi38_0_0.expo.modules.filesystem.FileSystemFileProvider" android:exported="false" android:grantUriPermissions="true" android:authorities="host.exp.exponent.FileSystemFileProvider">
+
+<meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_system_provider_paths"/>
+
+</provider>
+
+
+-<provider android:name="abi38_0_0.expo.modules.imagepicker.ImagePickerFileProvider" android:exported="false" android:grantUriPermissions="true" android:authorities="host.exp.exponent.ImagePickerFileProvider">
+
+<meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/image_picker_provider_paths"/>
+
+</provider>
+
+<service android:name="abi38_0_0.expo.modules.location.services.LocationTaskService" android:exported="false"/>
+
+
+-<provider android:name="abi38_0_0.expo.modules.mailcomposer.MailComposerFileProvider" android:exported="false" android:grantUriPermissions="true" android:authorities="host.exp.exponent.MailComposerFileProvider">
+
+<meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/mail_composer_provider_paths"/>
+
+</provider>
+
+<activity android:name="abi38_0_0.expo.modules.payments.stripe.OpenBrowserActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:launchMode="singleTask" android:exported="false"/>
+
+
+-<provider android:name="abi38_0_0.expo.modules.sharing.SharingFileProvider" android:exported="false" android:grantUriPermissions="true" android:authorities="host.exp.exponent.SharingFileProvider">
+
+<meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/sharing_provider_paths"/>
+
+</provider>
+
+
+-<receiver android:name="abi38_0_0.expo.modules.taskManager.TaskBroadcastReceiver" android:exported="false">
+
+
+-<intent-filter>
+
+<action android:name="abi38_0_0.expo.modules.taskManager.TaskBroadcastReceiver.INTENT_ACTION"/>
+
+<action android:name="android.intent.action.BOOT_COMPLETED"/>
+
+<action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+
+</intent-filter>
+
+</receiver>
+
+<service android:name="abi38_0_0.expo.modules.taskManager.TaskJobService" android:exported="false" android:enabled="true" android:permission="android.permission.BIND_JOB_SERVICE"/>
+
+<meta-data android:name="abi38_0_0.expo.modules.taskManager.oneAppId" android:value="true"/>
+
+<receiver android:name="host.exp.exponent.notifications.ScheduledNotificationReceiver" android:exported="false"/>
+
+
+-<receiver android:name="host.exp.exponent.notifications.receivers.SchedulingTriggerReceiver" android:exported="true">
+
+
+-<intent-filter>
+
+<action android:name="android.intent.action.REBOOT"/>
+
+<action android:name="android.intent.action.BOOT_COMPLETED"/>
+
+<action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+
+<action android:name="android.intent.action.TIME_CHANGED"/>
+
+<action android:name="android.intent.action.QUICKBOOT_POWERON"/>
+
+</intent-filter>
+
+</receiver>
+
+
+-<provider android:name="versioned.host.exp.exponent.modules.api.components.webview.RNCWebViewFileProvider" android:exported="false" android:grantUriPermissions="true" android:authorities="host.exp.exponent.fileprovider">
+
+<meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+
+</provider>
+
+
+-<provider android:name="expo.modules.mailcomposer.MailComposerFileProvider" android:exported="false" android:grantUriPermissions="true" android:authorities="host.exp.exponent.MailComposerFileProvider">
+
+<meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/mail_composer_provider_paths"/>
+
+</provider>
+
+
+-<provider android:name="expo.modules.imagepicker.ImagePickerFileProvider" android:exported="false" android:grantUriPermissions="true" android:authorities="host.exp.exponent.ImagePickerFileProvider">
+
+<meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/image_picker_provider_paths"/>
+
+</provider>
+
+<activity android:name="expo.modules.payments.stripe.OpenBrowserActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:launchMode="singleTask" android:exported="false"/>
+
+<activity android:name="com.stripe.android.view.AddPaymentMethodActivity" android:theme="@style/StripeDefaultTheme"/>
+
+<activity android:name="com.stripe.android.view.PaymentMethodsActivity" android:theme="@style/StripeDefaultTheme"/>
+
+<activity android:name="com.stripe.android.view.PaymentFlowActivity" android:theme="@style/StripeDefaultTheme"/>
+
+<activity android:name="com.stripe.android.view.PaymentAuthWebViewActivity" android:theme="@style/StripeDefaultTheme" android:windowSoftInputMode="adjustResize"/>
+
+<activity android:name="com.stripe.android.view.PaymentRelayActivity" android:theme="@style/StripeDefaultTheme"/>
+
+<activity android:name="com.stripe.android.view.Stripe3ds2CompletionActivity" android:theme="@style/StripeDefaultTheme"/>
+
+<activity android:name="com.stripe.android.paymentsheet.PaymentSheetActivity" android:theme="@style/StripePaymentSheetDefaultTheme"/>
+
+<activity android:name="com.stripe.android.paymentsheet.PaymentOptionsActivity" android:theme="@style/StripePaymentSheetDefaultTheme"/>
+
+<activity android:name="com.facebook.CustomTabMainActivity"/>
+
+<activity android:name="com.stripe.android.stripe3ds2.views.ChallengeActivity" android:theme="@style/Stripe3DS2Theme"/>
+
+<activity android:name="com.stripe.android.stripe3ds2.views.ChallengeProgressActivity" android:theme="@style/Stripe3DS2Theme"/>
+
+<activity android:name="com.facebook.ads.AudienceNetworkActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:exported="false" android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+<provider android:name="com.facebook.ads.AudienceNetworkContentProvider" android:exported="false" android:authorities="host.exp.exponent.AudienceNetworkContentProvider"/>
+
+<activity android:name="expo.modules.appauth.AppAuthBrowserActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:launchMode="singleTask" android:exported="false"/>
+
+<service android:name="com.google.android.gms.analytics.AnalyticsJobService" android:exported="false" android:enabled="true" android:permission="android.permission.BIND_JOB_SERVICE"/>
+
+<uses-library android:name="org.apache.http.legacy" android:required="false"/>
+
+<activity android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:exported="false" android:excludeFromRecents="true"/>
+
+<service android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:exported="true" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"/>
+
+<service android:name="expo.modules.location.services.LocationTaskService" android:exported="false" android:foregroundServiceType="0x8"/>
+
+
+-<provider android:name="expo.modules.filesystem.FileSystemFileProvider" android:exported="false" android:grantUriPermissions="true" android:authorities="host.exp.exponent.FileSystemFileProvider">
+
+<meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_system_provider_paths"/>
+
+</provider>
+
+
+-<service android:name="expo.modules.notifications.service.ExpoFirebaseMessagingService" android:exported="false">
+
+
+-<intent-filter android:priority="-1">
+
+<action android:name="com.google.firebase.MESSAGING_EVENT"/>
+
+</intent-filter>
+
+</service>
+
+
+-<receiver android:name="expo.modules.notifications.service.NotificationsService" android:exported="false" android:enabled="true">
+
+
+-<intent-filter android:priority="-1">
+
+<action android:name="expo.modules.notifications.NOTIFICATION_EVENT"/>
+
+<action android:name="android.intent.action.BOOT_COMPLETED"/>
+
+<action android:name="android.intent.action.REBOOT"/>
+
+<action android:name="android.intent.action.QUICKBOOT_POWERON"/>
+
+<action android:name="com.htc.intent.action.QUICKBOOT_POWERON"/>
+
+<action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+
+</intent-filter>
+
+</receiver>
+
+<activity android:name="net.openid.appauth.AuthorizationManagementActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:launchMode="singleTask" android:exported="false"/>
+
+<service android:name="io.nlopez.smartlocation.activity.providers.ActivityGooglePlayServicesProvider$ActivityRecognitionService" android:exported="false"/>
+
+<service android:name="io.nlopez.smartlocation.geofencing.providers.GeofencingGooglePlayServicesProvider$GeofencingService" android:exported="false"/>
+
+<service android:name="io.nlopez.smartlocation.geocoding.providers.AndroidGeocodingProvider$AndroidGeocodingService" android:exported="false"/>
+
+
+-<service android:name="com.google.firebase.components.ComponentDiscoveryService" android:exported="false" android:directBootAware="true">
+
+<meta-data android:name="com.google.firebase.components:com.google.firebase.ml.vision.VisionRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+
+<meta-data android:name="com.google.firebase.components:com.google.firebase.ml.common.CommonComponentRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+
+<meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+
+<meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+
+<meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+
+<meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+
+<meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+
+</service>
+
+
+-<provider android:name="expo.modules.sharing.SharingFileProvider" android:exported="false" android:grantUriPermissions="true" android:authorities="host.exp.exponent.SharingFileProvider">
+
+<meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/sharing_provider_paths"/>
+
+</provider>
+
+
+-<service android:name="com.google.firebase.messaging.FirebaseMessagingService" android:exported="false" android:directBootAware="true">
+
+
+-<intent-filter android:priority="-500">
+
+<action android:name="com.google.firebase.MESSAGING_EVENT"/>
+
+</intent-filter>
+
+</service>
+
+
+-<receiver android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:exported="true" android:permission="com.google.android.c2dm.permission.SEND">
+
+
+-<intent-filter>
+
+<action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+
+</intent-filter>
+
+</receiver>
+
+<activity android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:exported="false"/>
+
+<receiver android:name="com.google.android.gms.measurement.AppMeasurementReceiver" android:exported="false" android:enabled="true"/>
+
+
+-<receiver android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" android:exported="true" android:enabled="true" android:permission="android.permission.INSTALL_PACKAGES">
+
+
+-<intent-filter>
+
+<action android:name="com.android.vending.INSTALL_REFERRER"/>
+
+</intent-filter>
+
+</receiver>
+
+<service android:name="com.google.android.gms.measurement.AppMeasurementService" android:exported="false" android:enabled="true"/>
+
+<service android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:exported="false" android:enabled="true" android:permission="android.permission.BIND_JOB_SERVICE"/>
+
+<provider android:name="com.google.firebase.provider.FirebaseInitProvider" android:exported="false" android:authorities="host.exp.exponent.firebaseinitprovider" android:initOrder="100"/>
+
+<activity android:name="com.google.android.gms.ads.AdActivity" android:theme="@android:style/Theme.Translucent" android:exported="false" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"/>
+
+<provider android:name="com.google.android.gms.ads.MobileAdsInitProvider" android:exported="false" android:authorities="host.exp.exponent.mobileadsinitprovider" android:initOrder="100"/>
+
+<service android:name="com.google.android.gms.ads.AdService" android:exported="false" android:enabled="true"/>
+
+<meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+
+<provider android:name="com.facebook.internal.FacebookInitProvider" android:exported="false" android:authorities="host.exp.exponent.FacebookInitProvider"/>
+
+
+-<receiver android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver" android:exported="false">
+
+
+-<intent-filter>
+
+<action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+
+</intent-filter>
+
+</receiver>
+
+<service android:name="androidx.room.MultiInstanceInvalidationService" android:exported="false"/>
+
+
+-<receiver android:name="expo.modules.taskManager.TaskBroadcastReceiver" android:exported="false">
+
+
+-<intent-filter>
+
+<action android:name="expo.modules.taskManager.TaskBroadcastReceiver.INTENT_ACTION"/>
+
+<action android:name="android.intent.action.BOOT_COMPLETED"/>
+
+<action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+
+</intent-filter>
+
+</receiver>
+
+<service android:name="expo.modules.taskManager.TaskJobService" android:exported="false" android:enabled="true" android:permission="android.permission.BIND_JOB_SERVICE"/>
+
+<meta-data android:name="expo.modules.taskManager.oneAppId" android:value="true"/>
+
+<provider android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer" android:exported="false" android:authorities="host.exp.exponent.lifecycle-process" android:multiprocess="true"/>
+
+
+-<service android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery" android:exported="false">
+
+<meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+
+</service>
+
+<service android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:exported="false" android:permission="android.permission.BIND_JOB_SERVICE"/>
+
+<receiver android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver" android:exported="false"/>
+
+<activity android:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity" android:launchMode="singleInstance" android:exported="false" android:enabled="false" android:stateNotNeeded="true" android:process=":playcore_missing_splits_activity"/>
+
+<activity android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:theme="@style/Theme.PlayCore.Transparent" android:exported="false" android:enabled="false" android:stateNotNeeded="true"/>
+
+<service android:name="com.google.android.play.core.assetpacks.AssetPackExtractionService" android:exported="true" android:enabled="false"/>
+
+</application>
+
+</manifest>
