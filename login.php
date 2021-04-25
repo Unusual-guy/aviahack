@@ -15,7 +15,7 @@ if(isset($data['do_login'])){
 			if($user['id']==3){
 			header('Location: /clientrab.php');    
 			}
-			else {
+			if ($user['id']==2){
 			header('Location: /client.php');}	
 			
 		}else{
