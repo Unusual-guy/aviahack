@@ -6,6 +6,8 @@ $dat = $_POST;
 if(isset($dat['do_login'])){
 	R::exec('INSERT INTO `mes`(`idcl`,`mes`) VALUES ("2",?)',array($dat['problem']));
 }
+if(isset($dat['do_update'])){
+}
 if(isset($dat['do_clear'])){
 	R::exec('UPDATE `task` SET `state`="0"');
 }
@@ -54,7 +56,7 @@ for($i =1; $i<=5; $i++){
 <input type="problem" name="problem" class="problem" value="<?php echo @$dat['problem']; ?>">
 <button type="submit" name="do_login">отправить запрос</button>
  <br> <strong>Запросы</strong><br>
- <article><?php $findTask = R::find('task'); for($i =1; $i<=count($findTask); $i++){if ($findTask[$i]['state']){echo $findTask[$i]['task'];?>} <br><?php } ?></article><?php } ?> 
+ <article><?php $findTask = R::find('task'); for($i =1; $i<=count($findTask); $i++){if ($findTask[$i]['state']){echo $findTask[$i]['task'];?> <br><?php echo $findTask[$i]['type'];?> <?php echo $findTask[$i]['object'];?> <br><?php } ?></article><?php } ?> 
 
 <br>
 <button type="submit" name="do_clear">очистить запрос</button>
@@ -63,6 +65,8 @@ for($i =1; $i<=5; $i++){
                 <p><input type="active"   name="active"/><?php if($findMess[$i]['active']){ echo on; } ?> </p>
 				<article><?php echo $findMess[$i]['sec'];  ?></article> <button type="submit" name=<?php echo $i ?>>изменить активность</button>
             <br><br> <br><?php } ?> 
+            
+            <button type="submit" name="do_update">обновление</button>
 <style
 
 
