@@ -1,0 +1,130 @@
+<?php
+require "db.php";
+?>
+<?php
+$data = $_POST;
+if(isset($dat['do_update'])){
+}
+if(isset($data['do_login'])){
+	$errors=array();
+	$id=$data['id'];
+	R::exec('INSERT INTO `task`(`type`,`object`) VALUES (?,"5")',array($data['type']));
+	R::exec('UPDATE `task` SET `object`=? WHERE `object`="5" ',array($data['obj']));
+	
+}
+
+
+
+?>
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=google">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta http-equiv="X-UA-Compatible" content="ie=yandex">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+	<title>Авиахакатон</title>
+</head>
+<body>
+	<header class="d-flex flex-column flex-md-row align-items-center p-3px-md-4 mb-3 border-bottom shadow-sm">
+	
+	<a class="navbar-brand" href="/en/">
+            <img src="/img/1.jpg" width="60" height="60" class="d-inline-block align-top">
+   
+          </a>
+	
+	
+	<?php if(isset($_SESSION['logged_user']) ): ?>
+
+	<a class="btn btn-outline-primary" href="/logout.php">Выйти</a>
+	<?php endif; ?>
+	
+  </header>
+<form action="clientrab.php" method="POST">
+  <strong class="text">Запрос</strong><br>
+  <select class="task" type="type" name="type" multiple value="<?php echo @$data['type']; ?>">
+      <option>none</option>
+          <option>принести оборудование</option>
+          <option>доставить технику</option>
+          <option>запросить работника</option>
+          <option>убрать</option>
+          <option>забрать</option>
+       
+</select>
+
+  <select class="task" type="obj" name="obj" multiple value="<?php echo @$data['obj']; ?>">
+      <option>none</option>
+          <option>погрузчик</option>
+          <option>доставщик багажа</option>
+          <option>заправщик</option>
+          <option>стремянка</option>
+          <option>фонарь</option>
+       
+</select>
+
+
+<input type="problem" name="problem" class="problem" value="<?php echo @$data['problem']; ?>">
+
+<button class="text" type="submit" name="do_login">отправить запрос</button>
+<br><br>
+<strong class="text">ответ</strong>
+<article class="text"><?php $findMess = R::find('mes','idcl=3'); for($i =0; $i<=count($findMess); $i++){echo $findMess[$i]['mes']; ?> <br><?php } ?> </article>
+<style>
+input.problem {
+    width:  1000px;
+    height: 100px;
+    padding: 5px 10px 5px 10px;
+    border:1px solid #999;
+    font-size:16px;
+    font-family: Tahoma;
+}
+
+ .text{
+        color:black;
+	text-align:center;
+	opacity:1;
+	width:150px;
+	margin-left:30px;
+	font-size:25px;	
+
+	margin-right:20px;
+
+	transition:2s all;
+        
+    }
+    .all{
+        color:#DFDDDE;
+	text-align:center;
+	background-color:#96B4E1;
+
+	border:2px solid #A8C2E1;
+	width:200px;
+	margin-left:40px;
+	font-size:35px;
+		margin-left:630px;
+
+	margin-right:20px;
+        
+    }
+    
+    .problem{
+    font-size: 16px;
+  padding: 10px;
+  display: block;
+  width: 200px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+</style>
+<button type="submit" name="do_update">обновление</button>
+</form>
+<body>
+
+</html>
+
+
+	
